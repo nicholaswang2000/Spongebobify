@@ -5,8 +5,9 @@
   src: url("KrabbyPatty.ttf");
 }
 
-html,
 body {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
   font-family: "krabby_pattyregular", sans-serif;
   font-size: 14px;
   margin: 0;
@@ -118,17 +119,18 @@ h4 {
 }
 
 .btn {
+  transition: color 0.2s ease-in-out;
   margin-top: 20px;
   position: absolute;
   background-color: transparent;
   border: none;
-  color: dodgerblue;
+  color: rgb(74, 115, 238);
   font-size: 20px;
   cursor: pointer;
 }
 
 .btn:hover {
-  color: RoyalBlue;
+  color: rgb(28, 76, 219);
 }
 
 .btn:focus {
