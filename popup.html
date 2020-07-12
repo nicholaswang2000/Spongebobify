@@ -10,6 +10,7 @@
     />
     <link rel="stylesheet" href="style.css" />
     <script src="popup.js"></script>
+    </script>
   </head>
 
   <body>
@@ -23,18 +24,33 @@
       <p>Enter text to Spongebobify:</p>
     </div>
     <div class="modal-content">
-      <textarea id="textArea" name="text" rows="4" cols="16"></textarea>
-      <a href="https://www.traversymedia.com" target="_blank">
-        <i class="fa fa-arrow-right translate" style="color: black;"></i>
-      </a>
-      <textarea
-        id="textArea"
-        name="text"
-        rows="4"
-        cols="16"
-        readonly
-      ></textarea>
+      <div>
+        <span>
+          <textarea
+            id="inputArea"
+            name="text"
+            rows="4"
+            cols="16"
+            onkeypress="myFunction()"
+          ></textarea>
+        </span>
+        <span>
+            <button class="btn">
+          <i class="fa fa-arrow-right"></i>
+        </button></span>
+        <span>
+          <textarea
+            id="outputArea"
+            name="text"
+            rows="4"
+            cols="16"
+            readonly
+          ></textarea>
+        </span>
+      </div>
+      <span> <h4>Not random enough? Click here to Spongeboby again!</h4> </span>
     </div>
+
     <div class="modal-icons">
       <div class="flex-container">
         <div class="flex">
