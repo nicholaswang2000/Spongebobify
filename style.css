@@ -12,6 +12,14 @@ body {
   margin: 0;
   min-height: 180px;
   width: 384px;
+  color: white;
+
+  background-image: linear-gradient(
+      rgba(255, 255, 500, 0),
+      rgba(255, 255, 255, 0)
+    ),
+    url("images/fewaf.jpg");
+  background-size: 400px 180px;
 }
 
 h1 {
@@ -19,9 +27,13 @@ h1 {
   font-size: 30px;
   font-weight: 400;
   margin: 0;
-  color: #2f5876;
+  color: #ebf551;
   padding-top: 15px;
   padding-left: 22px;
+}
+
+.title {
+  text-shadow: -3px 3px #9b9f52;
 }
 
 a:link,
@@ -37,16 +49,26 @@ img {
 
 .modal-header {
   align-items: center;
+  margin-bottom: -7px;
 }
 
 .modal-content {
   padding-left: 22px;
   display: block;
   margin: auto;
+  text-shadow: -0.7px 0.7px 0.7px black;
+}
+
+.modal-content-2 {
+  display: block;
+  margin-top: -7px;
+  margin-left: 22px;
+  text-shadow: -0.7px 0.7px 0.7px black;
 }
 
 .modal-icons {
   border-top: 0.5px solid #dadada;
+  background-color: white;
   height: 20px;
   width: 100%;
 }
@@ -59,38 +81,50 @@ img {
 .flex-container {
   display: flex;
   justify-content: space-between;
-  padding: 10px 22px;
+  padding-left: 22px;
+  padding-bottom: 10px;
 }
 
 .flex {
+  position: absolute;
+  padding-left: 250px;
+  margin-top: -34px;
   opacity: 1;
-  transition: opacity 0.2s ease-in-out;
   width: 120px;
 }
 
-.flex:hover {
-  opacity: 0.4;
+.hover {
+  transition: opacity 0.2s ease-in-out;
 }
 
-.flex .fa {
-  font-size: 30px;
-  color: #2f5876;
+.hover:hover {
+  opacity: 0.5;
 }
 
 textArea {
   resize: none;
 }
 
+textArea:focus {
+  outline: none;
+  box-shadow: none;
+}
+
 h4 {
   font-size: 10px;
+  padding-left: 2px;
+  margin-top: 2px;
+  text-shadow: -0.7px 0.7px 0.7px black;
 }
 
 .btn {
+  margin-top: 20px;
+  position: absolute;
   background-color: transparent;
-  border: none; /* Remove borders */
-  color: dodgerblue; /* White text */
-  font-size: 16px; /* Set a font size */
-  cursor: pointer; /* Mouse pointer on hover */
+  border: none;
+  color: dodgerblue;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -100,4 +134,9 @@ h4 {
 .btn:focus {
   outline: none;
   box-shadow: none;
+}
+
+#outputArea {
+  position: absolute;
+  margin-left: 27px;
 }

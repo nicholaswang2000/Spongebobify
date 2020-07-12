@@ -13,73 +13,50 @@
   </head>
 
   <body>
-    <div class="modal-header">
-      <h1 class="logo">
-        Spongebobify
-        <span class="version">(1.0.0)</span>
-      </h1>
-    </div>
-    <div class="modal-content">
-      <p>Enter text to Spongebobify:</p>
-    </div>
-    <div class="modal-content">
-      <div>
-        <span>
-          <textarea
-            id="inputArea"
-            name="text"
-            rows="4"
-            cols="16"
-          ></textarea>
-        </span>
-        <span>
-          <button class="btn" id="translate">
-            <i class="fa fa-arrow-right"></i>
-          </button>
-          <script src="popup.js"></script>
-        </span>
-        <span>
-          <textarea
-            id="outputArea"
-            name="text"
-            rows="4"
-            cols="16"
-            readonly
-          ></textarea>
-        </span>
+    <div class="content">
+        <div class="modal-header">
+        <h1 class="logo">
+            <span class="title">Spongebobify</span>
+            <span class="version">(1.0.0)</span>
+            <div class="flex">
+                <a href="https://github.com/nicholaswang2000/Spongebobify" target="_blank">
+                  <i class="fa fa-github hover" style="color:royalblue"></i>
+                </a>
+              </div>
+        </h1>
+        </div>
+        <div class="modal-content">
+        <p>Enter text to Spongebobify:</p>
+        </div>
+        <div class="modal-content-2">
+        <div>
+            <span>
+            <textarea
+                id="inputArea"
+                name="text"
+                rows="4"
+                cols="16"
+            ></textarea>
+            </span>
+            <span>
+            <button class="btn" id="translate">
+                <i class="fa fa-arrow-right translate-btn"></i>
+            </button>
+            <script src="popup.js"></script>
+            </span>
+            <span>
+            <textarea
+                id="outputArea"
+                name="text"
+                rows="4"
+                cols="16"
+                readonly
+            ></textarea>
+            </span>
+        </div>
+        <span> <h4>Not spongebobified enough? Click here to change settings!</h4> </span>
       </div>
-      <span> <h4>Not spongebobified enough? Change some settings here!</h4> </span>
-      <p id="demo"></p>
-    </div>
 
-    <div class="modal-icons">
-      <div class="flex-container">
-        <div class="flex">
-          <a href="https://www.traversymedia.com" target="_blank">
-            <i class="fa fa-globe" style="color: darksalmon;"></i>
-          </a>
-        </div>
-        <div class="flex">
-          <a href="https://www.youtube.com/traversymedia" target="_blank">
-            <i class="fa fa-youtube" style="color: darksalmon;"></i>
-          </a>
-        </div>
-        <div class="flex">
-          <a href="https://www.twitter.com/traversymedia" target="_blank">
-            <i class="fa fa-twitter" style="color: darksalmon;"></i>
-          </a>
-        </div>
-        <div class="flex">
-          <a href="https://www.facebook.com/traversymedia" target="_blank">
-            <i class="fa fa-facebook" style="color: darksalmon;"></i>
-          </a>
-        </div>
-        <div class="flex">
-          <a href="https://www.github.com/bradtraversy" target="_blank">
-            <i class="fa fa-github" style="color: darksalmon;"></i>
-          </a>
-        </div>
-      </div>
     </div>
   </body>
 </html>
