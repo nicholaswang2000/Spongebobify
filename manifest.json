@@ -20,5 +20,9 @@
       "js": ["popup.js"]
     }
   ],
+  "background": {
+    "persistent": true,
+    "scripts": ["spongebobify.js"]
+  },
   "permissions": ["activeTab", "contextMenus"]
 }

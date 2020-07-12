@@ -1,13 +1,21 @@
-let translate = document.getElementById("translate");
+var contextMenus = {};
+var title = "title";
+contextMenus.spongebobify = chrome.contextMenus.create(
+  { title: "Spongebobify", contexts: ["selection"] },
+  function () {
+    if (chrome.runtime.lastError) {
+      console.error(chrome.runtime.lastError.message);
+    }
+  }
+);
 
-if (translate == null) {
+chrome.contextMenus.onClicked.addListener(contextMenuHandler);
+
+function contextMenuHandler(info, tab) {
+  if (info.menuItemId === contextMenus.spongebobify) {
+    console.log(info.selectionText);
+  }
 }
-
-translate.onclick = function () {
-  var textToTranslate = document.getElementById("inputArea").value;
-  text = spongebobifyText(textToTranslate);
-  moveToTextarea(text);
-};
 
 function spongebobifyText(text) {
   var spongebobifiedText = "";
@@ -29,8 +37,4 @@ function spongebobifyText(text) {
     }
   }
   return spongebobifiedText;
-}
-
-function moveToTextarea(spongebobifiedText) {
-  document.getElementById("outputArea").value = spongebobifiedText;
 }
