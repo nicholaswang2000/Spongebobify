@@ -9,7 +9,6 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
-    <script src="popup.js"></script>
     </script>
   </head>
 
@@ -31,13 +30,14 @@
             name="text"
             rows="4"
             cols="16"
-            onkeypress="myFunction()"
           ></textarea>
         </span>
         <span>
-            <button class="btn">
-          <i class="fa fa-arrow-right"></i>
-        </button></span>
+          <button class="btn" id="translate">
+            <i class="fa fa-arrow-right"></i>
+          </button>
+          <script src="popup.js"></script>
+        </span>
         <span>
           <textarea
             id="outputArea"
@@ -48,7 +48,8 @@
           ></textarea>
         </span>
       </div>
-      <span> <h4>Not random enough? Click here to Spongeboby again!</h4> </span>
+      <span> <h4>Not spongebobified enough? Change some settings here!</h4> </span>
+      <p id="demo"></p>
     </div>
 
     <div class="modal-icons">
