@@ -13,7 +13,19 @@ chrome.contextMenus.onClicked.addListener(contextMenuHandler);
 
 function contextMenuHandler(info, tab) {
   if (info.menuItemId === contextMenus.spongebobify) {
-    console.log(info.selectionText);
+    let textToSpongebobify = info.selectionText;
+    chrome.tabs.executeScript(null, {
+      code:
+        "var spongebobifiedText = '" +
+        spongebobifyText(textToSpongebobify) +
+        "';" +
+        "function modifyText(newValue) {" +
+        "var range = document.getSelection().getRangeAt(0);" +
+        "range.deleteContents();" +
+        "range.insertNode(document.createTextNode(newValue));" +
+        "}" +
+        "modifyText(spongebobifiedText);",
+    });
   }
 }
 
