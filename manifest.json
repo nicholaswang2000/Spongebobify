@@ -17,12 +17,12 @@
   "content_scripts": [
     {
       "matches": ["*://*/*"],
-      "js": ["popup.js"]
+      "js": ["js/popup.js"]
     }
   ],
   "background": {
     "persistent": true,
-    "scripts": ["spongebobify.js"]
+    "scripts": ["js/spongebobify.js"]
   },
   "permissions": ["activeTab", "contextMenus"]
 }
