@@ -28,7 +28,7 @@ Contributions are always welcome! Make sure to pull into your local repository a
 
 ### Learn
 
-Chrome extensions can be developed by anyone with Javascript knowledge! Hit me up if you have questions regarding Chrome extension development at nicholaswang2000@gmail.com. Feel free to use this code as a starting point for your project. That being said, please don't rip off the code.
+Chrome extensions can be developed by anyone with Javascript knowledge. Hit me up if you have questions regarding Chrome extension development at nicholaswang2000@gmail.com. Feel free to use this code as a starting point for your project. That being said, please don't rip off the code.
 
 ---
 
