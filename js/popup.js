@@ -1,8 +1,5 @@
 let translate = document.getElementById("translate");
 
-if (translate == null) {
-}
-
 translate.onclick = function () {
   var textToTranslate = document.getElementById("inputArea").value;
   text = spongebobifyText(textToTranslate);
